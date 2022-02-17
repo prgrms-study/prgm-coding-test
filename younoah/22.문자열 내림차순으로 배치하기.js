@@ -1,2 +1,1 @@
-const solution = s =>
-  [...s].sort((a, b) => b.charCodeAt() - a.charCodeAt()).join('');
+const solution = s => [...s].sort((a, b) => (a < b) - (a > b)).join('');

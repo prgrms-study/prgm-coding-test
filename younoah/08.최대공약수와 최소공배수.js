@@ -1,6 +1,7 @@
 const solution = (n, m) => [gcd(n, m), lcm(n, m)];
 
-// 최대 공배수(gcd)
+
+// 최대 공약수(gcd)
 const gcd = (a, b) => {
   let res = 1;
 
@@ -9,7 +10,7 @@ const gcd = (a, b) => {
   }
 
   return res;
-};
+}
 
-// 최대 공약수(lcm)
+// 최소 공배수(lcm)
 const lcm = (a, b) => (a * b) / gcd(a, b);

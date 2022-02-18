@@ -1,6 +1,1 @@
-const solution = pn =>
-  [...pn]
-    .reverse()
-    .map((n, i) => (i < 4 ? n : '*'))
-    .reverse()
-    .join('');
+const solution = pn => '*'.repeat(pn.length - 4) + pn.slice(pn.length - 4);
